@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    direction: rtl;
+  }
+  
+  body {
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom Arabic font styling */
+@font-face {
+  font-family: 'Cairo';
+  src: url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap');
+}
+
+.font-arabic {
+  font-family: 'Cairo', system-ui, -apple-system, sans-serif;
+}
